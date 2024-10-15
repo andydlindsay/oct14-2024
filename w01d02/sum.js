@@ -1,5 +1,3 @@
-const { userInfo } = require("os");
-
 // how to read in command line arguments
 const args = process.argv;
 // console.log(args);
