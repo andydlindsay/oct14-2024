@@ -1,6 +1,5 @@
 // single responsibility principle (SRP) - our code (functions) should be responsible for only one thing
 
-
 const loopOverArray = function(arr, callback) {
   // loop over the provided array
   for (const element of arr) {
