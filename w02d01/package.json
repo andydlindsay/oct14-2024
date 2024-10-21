@@ -1,0 +1,19 @@
+{
+  "name": "testing-with-mocha",
+  "version": "0.5.0",
+  "description": "Package for testing JS with mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "testing",
+    "js",
+    "mocha"
+  ],
+  "author": "Andy Lindsay",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.7.3"
+  }
+}
