@@ -5,7 +5,6 @@
 // set encoding on the connection
 process.stdin.setEncoding('utf-8');
 
-
 // listen for someone typing
 process.stdin.on('data', (data) => {
   console.log('you typed: ', data.trim());
