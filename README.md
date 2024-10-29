@@ -6,3 +6,4 @@
 * [W02D01 - TDD, CommonJS, and NPM](/w02d01/)
 * [W02D03 - Networking with TCP and HTTP](/w02d03/)
 * [W02D04 - Promises](/w02d04/)
+* [W03D03 - HTTP Cookies & User Authentication](/w03d03/)
