@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 25px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,11 +19,19 @@ header {
 
 section {
   border: 2px solid black;
+  /* width: 500px; */
+  /* height: 400px; */
 }
 
 section div {
   height: 150px;
-  width: 150px;
+  /* height: 50vw; */
+  /* width: 150px; */
+  /* font-size: 22px; */
+  /* width: 10rem; */
+  width: 25vw;
+  /* min-width: 100px; */
+  /* max-width: 250px; */
   margin: 20px;
   line-height: 150px;
   display: inline-block;
@@ -27,7 +39,19 @@ section div {
   text-align: center;
 }
 
-footer {
+body footer {
   background-color: burlywood;
   height: 150px;
+}
+
+@media screen and (min-width: 800px) {
+  body footer {
+    background-color: magenta;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+  body footer {
+    background-color: blue;
+  }
 }

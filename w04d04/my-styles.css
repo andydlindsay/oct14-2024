@@ -1,0 +1,33 @@
+h1 {
+  font-size: 24px;
+  color: orange;
+  border: 2px solid black;
+}
+
+div {
+  border: 2px solid green;
+}
+div header {
+  font-weight: bold;
+}
+div header h2 {
+  color: blue;
+}
+
+.heading, .extended-class {
+  text-decoration: underline;
+}
+
+.extended-class {
+  font-size: 2em;
+}
+
+.other-style {
+  color: blue;
+  display: none;
+  width: 150px;
+  height: 25px;
+  background: yellowgreen;
+}
+
+/*# sourceMappingURL=my-styles.css.map */

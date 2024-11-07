@@ -1,0 +1,52 @@
+$my-var: orange;
+$border-style: solid;
+$border-width: 2px;
+$border-color: black;
+$border: $border-width $border-style $border-color;
+
+@use 'variables';
+
+h1 {
+  font-size: 24px;
+  color: $my-var;
+  border: $border;
+}
+
+// <div>
+//   <header>
+//     <h2>Hello world</h2>
+//   </header>
+// </div>
+
+div {
+  border: 2px solid green;
+
+  header {
+    font-weight: bold;
+
+    h2 {
+      color: blue;
+    }
+  }
+}
+
+.heading {
+  text-decoration: underline;
+}
+
+.extended-class {
+  @extend .heading;
+  font-size: 2em;
+}
+
+@mixin create-square($width, $color) {
+  color: $color;
+  display: none;
+  width: $width + 50;
+  height: 25px;
+}
+
+.other-style {
+  @include create-square(100px, blue);
+  background: yellowgreen;
+}
