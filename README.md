@@ -10,3 +10,4 @@
 * [W03D04 - Security & Real World HTTP Servers](/w03d04/)
 * [W04D01 - Intro to CSS](/w04d01/)
 * [W04D04 - Responsive Design and SASS](/w04d04/)
+* [W05D02 - Database Design](/w05d02/)
