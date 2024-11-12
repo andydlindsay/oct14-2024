@@ -49,7 +49,7 @@
 - Can be created using pen and paper, a whiteboard, or using an online application
 
 ### Student Suggestion: TicketMaster
-![TicketMaster]()
+![TicketMaster](https://raw.githubusercontent.com/andydlindsay/oct14-2024/refs/heads/main/w05d02/TicketMaster.drawio.png)
 
 ### Useful Links
 * [Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
