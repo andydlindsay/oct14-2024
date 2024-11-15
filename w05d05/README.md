@@ -5,76 +5,84 @@
 * Learning how to work as a team
 
 ### Pick a Project
+- Wiki Map
+- Quiz App
+- Story Creator
+- Decision Maker
+- PasswordKeepR
+- Smart TODO List
+- Resource Wall
+- Buy/Sell Listing Website
+- Schoodle
+- Food Pick-up Ordering
 
 ### User Stories
-* describes how a user can interact with the app
-* As a ______, I can ________, because ______
+- A _user story_ describes how users will interact with your application
+- They have the form: As a ______, I want to ______, because ______.
+- eg. As a _user_, I want to _be able to save posts_, because _I want to review them later_.
+- User stories can also be negated: As a _____, I shouldn't be able to ______, because _____.
+- eg. As a _user_, I shouldn't be able to _edit other users posts_, because _I don't own those posts_.
 
-* As a logged in user, I can create a poll with multiple choices, because I want to see what my friends are interested in
-* As a non logged in user, I cannot delete a url, because it doesn't belong to me.
-
-/planning/user-stories.md
-
-### Nouns are Resources
-* nouns === table
-* ERD
-
-planning/erd.png
-planning/erd-stretch.png
+### ERD
+- The user stories provide you with nouns (eg. user, posts, favourites)
+- Use these nouns/entities to build out your database (ie. tables are the nouns from the stories)
 
 ### Routes
-* RESTful routes
+- Once you know the resources that you'll have, write out the routes that you'll need to perform BREAD operations on those resources
+- Remember RESTful conventions (they make it much easier)
 
-Browse  GET   /products
-Read    GET   /products/:id
-Edit    POST  /products/:id
-Add     POST  /products
-Delete  POST  /products/:id/delete
+### MVP vs MVD
+- There is a concept in development of an MVP, the Minimum Viable Product
+- An MVP has just enough features to be useful to a user
+- This concept helps streamline the development process and help keep the team on target
+- For mid-terms, we want to focus on the MVD, the Minimum Viable Demo
+- **If you aren't going to demo it, don't build it**
 
-planning/routes.md
+### Wireframes
+- Draw out the structure of your web pages
+- This will make it much easier to build out these pages later
+- This is also a great opportunity to get input from all of the team members
+- Design matters... however you are a developer, not a designer
+- Get inspiration from websites you visit
 
-### MVP
-* Minimum Viable Product
-* @KV Minimum Viable Demo (MVD)
-* what is the minimum set of features that we can demo in 5 mins
-* If you don't show it, don't build it
-
-### User Login/Registration
-* don't do it
+### User Login
+- Don't do it
+- Seriously, don't do it
+- We know that you know how to register and login users
 
 ```js
-// GET /login/:userId http://localhost:3000/login/5
+// do this instead
 app.get('/login/:id', (req, res) => {
-  // plaintext cookies
-  res.cookie('userId', req.params.id);
+  // using encrypted cookies
+  req.session.user_id = req.params.id;
 
-  // encrypted cookies
-  req.session.userId = req.params.id;
+  // or using plain-text cookies
+  res.cookie('user_id', req.params.id);
 
   // send the user somewhere
-  res.redirect('/home');
+  res.redirect('/');
 });
 ```
 
-### Wireframes/Mockups
+### Tech Choices
+- We have made all the tech choices for you
+- Back End: Node and Express
+- Front End: HTML, CSS, JS, jQuery, Bootstrap
 
-planning/wireframe.png
+### The Mid-term Skeleton
+- Use the provided `node-skeleton` as a template for your project
+- This will get you up and running quickly
 
-### Tech Stack
-* Back end: Node, Postgres, Express
-* Front end: HTML, CSS, JavaScript, jQuery, tailwind, bootstrap
-
-1. Create a SCSS in /styles (layout.scss)
-2. Make a Link tag in your HTML that requests the css version of the file (layout.css)
-3. Middleware translates on the fly layout.scss => layout.css => public/styles
-4. Express static middleware will serve it up
-
-### SPA vs MPA
-* these are not mutually exclusive
+### SPA vs Multi-page App
+- These concepts are not mutually exclusive
+- You can choose one or the other or both
 
 ### Git
-* always use branches
-* use PR or local merges
+- Use Git best practices (ask a mentor for clarification if you need it)
+- Use branches
+
+### DO NOT CODE ON MASTER
+- I repeat, do not code on master
 
 ### Splitting up the work
 * Vertical - each dev working on a thin slice of the fullstack
@@ -82,4 +90,5 @@ planning/wireframe.png
 * Pair Programming
 
 ### Communication
-* update the scrum channel
+- Make sure to communicate with your team members
+- Use Slack, iMessage, Google Hangouts, whatever... just make sure that everyone is on the same page
