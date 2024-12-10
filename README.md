@@ -17,3 +17,4 @@
 * [W07D05 - Custom Hooks](/w07d05/)
 * [W08D02 - Class-based Components](/w08d02/)
 * [W08D04 - End-to-End Testing with Cypress](/w08d04/)
+* [BREAKOUT - Ruby on Rails (Routing and Controllers)](/breakout-rails-1/)
