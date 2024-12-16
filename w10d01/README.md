@@ -6,6 +6,10 @@
 - [x] Quickly build simple Rails app
 - [x] Respond with JSON
 
+### Rails Week
+* makes it easy to deal with resources from a database (AR) ORM
+* lots of magic (convention over configuration)
+
 ### Model View Controller Review
 - **Model:** Responsible for handling data logic (eg. database queries)
 - **View:** Responsible for the UI (User Interface)
