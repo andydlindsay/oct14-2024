@@ -1,0 +1,10 @@
+"use strict";
+let myStr = 'hello world';
+myStr = 'good day';
+myStr = 42;
+myStr = false;
+const numbers = [];
+numbers.push(78);
+numbers.push('hello');
+// numbers.push(true);
+const result = numbers.pop();
